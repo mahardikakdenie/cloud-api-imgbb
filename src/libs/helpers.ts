@@ -13,8 +13,7 @@ export const uploadImage = async (req: MulterRequest) => {
     }
 
     const form = new FormData();
-    // Menggunakan buffer file langsung tanpa mengubahnya ke base64
-    form.append('image', req.file.buffer, req.file.originalname); // Menyertakan nama file
+    form.append('image', req.file.buffer, req.file.originalname);
 
     const response = await axios.post(`https://api.imgbb.com/1/upload?key=${process.env.IMGBB_API_KEY}`, form, {
       headers: {

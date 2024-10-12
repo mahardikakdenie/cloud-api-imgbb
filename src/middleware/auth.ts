@@ -1,6 +1,6 @@
 import { Response, NextFunction } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import { CustomRequest } from '../api/interfaces/CustomRequestInterface';
+import { CustomRequest } from '../interface/CustomRequestInterface';
 
 const SECRET_KEY = process.env.JWT_SECRET || 'your_secret_key';
 
