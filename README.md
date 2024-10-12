@@ -50,52 +50,61 @@ Before you begin, ensure you have the following installed:
 ## Environment Setup
 
 1. **Copy the example environment file:**
+
     ```bash
     cp .env.example .env
 
-2. 
+    ```
+
+2. **\*Open the `.env` file and add the required environment variables, such as your imgbb API key:**
+    ```bash
+    PORT=`<your_port>`
+    DB_URI=`<your_db_uri>`
+    IMGBB_API_KEY=`<your_imgbb_api_key_here>`
+    ```
 
 ## Running the Project
 
 To run the project, use the following command:
 ```bash
 npm run dev
+```
 
 # Project Structure
-
     ```bash
-    cloud-api-imgbb
-    │
-    ├── src/
-    │ ├── controller/
-    │ │ └── media_controller.ts # Media-related controller
-    │ ├── interface/
-    │ │ ├── CustomRequestInterface.ts # Custom request interface
-    │ │ └── media_interface.ts # Media-specific interface
-    │ ├── libs/
-    │ │ └── helpers.ts # Helper functions
-    │ ├── middleware/
-    │ │ └── auth.ts # Authorization middleware
-    │ ├── model/
-    │ │ └── media.ts # Media model
-    │ ├── repository/
-    │ │ └── media_repository.ts # Media repository for database operations
-    │ ├── routes/
-    │ │ └── media_routes.ts # Routes for media operations
-    │ ├── service/
-    │ │ ├── database.ts # Database connection setup
-    │ │ └── index.ts # Entry point of the application
-    │ └── ...
-    ├── .env # Environment variables
-    ├── .env.example # Example environment variables file
-    ├── .eslintrc.json # ESLint configuration file
-    ├── .gitignore # Files and directories to ignore in Git
-    ├── package-lock.json # npm lock file
-    ├── package.json # npm configuration
-    ├── README.md # Project documentation
-    ├── tsconfig.json # TypeScript configuration
-    └── ...
+        cloud-api-imgbb
+        │
+        ├── src/
+        │ ├── controller/
+        │ │ └── media_controller.ts # Media-related controller
+        │ ├── interface/
+        │ │ ├── CustomRequestInterface.ts # Custom request interface
+        │ │ └── media_interface.ts # Media-specific interface
+        │ ├── libs/
+        │ │ └── helpers.ts # Helper functions
+        │ ├── middleware/
+        │ │ └── auth.ts # Authorization middleware
+        │ ├── model/
+        │ │ └── media.ts # Media model
+        │ ├── repository/
+        │ │ └── media_repository.ts # Media repository for database operations
+        │ ├── routes/
+        │ │ └── media_routes.ts # Routes for media operations
+        │ ├── service/
+        │ │ ├── database.ts # Database connection setup
+        │ │ └── index.ts # Entry point of the application
+        │ └── ...
+        ├── .env # Environment variables
+        ├── .env.example # Example environment variables file
+        ├── .eslintrc.json # ESLint configuration file
+        ├── .gitignore # Files and directories to ignore in Git
+        ├── package-lock.json # npm lock file
+        ├── package.json # npm configuration
+        ├── README.md # Project documentation
+        ├── tsconfig.json # TypeScript configuration
+        └── ...
+```
 
-# Contributing
 
+## Contributing
 **_If you would like to contribute to this project, please fork the repository and submit a pull request_**
